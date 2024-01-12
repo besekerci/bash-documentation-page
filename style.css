@@ -1,0 +1,111 @@
+:root {
+    --primary: #CCCCCC;
+    --secondary: #000000;
+    --anchor-hover: #FFFFFF;
+    --code: #00DB00;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    color: var(--primary);
+    background-color: var(--secondary);
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.6rem;
+    line-height: 2;
+}
+
+#navbar {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    height: 100%;
+    overflow: auto;
+    border-right: 0.1rem solid;
+}
+
+h1 {
+    text-align: center;
+    font-size: 3rem;
+}
+
+#navbar ul li {
+    list-style-type: none;
+    border-top: 0.1rem solid;
+    text-align: center;
+    position: relative;
+}
+
+.nav-link {
+    padding: 1rem 1.5rem;
+    display: block;
+    text-decoration: none;
+}
+
+a {
+    color: var(--primary);
+}
+
+a:hover {
+    color: var(--anchor-hover);
+}
+
+#main-doc {
+    margin: 6vh 12vw 8vh 28rem;
+    max-width: 100rem;
+}
+
+header {
+    padding: 3rem 0;
+}
+
+h3 {
+    padding: 1.5rem 0;
+}
+
+section li {
+    padding: 1rem 0;
+    margin-left: 3rem;
+}
+
+#Reference_List {
+    overflow: auto;
+}
+
+code {
+    font-family: Courier, monospace;
+    background-color: #424242;
+    color: var(--code);
+    padding: 0.1rem;
+    white-space: pre-line;
+    word-break: break-word;
+}
+
+@media (max-width: 700px) {
+    #navbar {
+        position: absolute;
+        height: 26rem;
+        width: 100%;
+        border-right: none;
+        border-bottom: 0.2rem solid;
+    }
+
+    #main-doc {
+        margin: 27rem 12vw 10vh 12vw;
+    }
+}
