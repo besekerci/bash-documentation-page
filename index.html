@@ -1,297 +1,330 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="./style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <title>Bash Documentation Page</title>
-    <style>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <title>Bash Documentation Page</title>
+        <style>
 
-    </style>
-</head>
+        </style>
+    </head>
 
-<body>
-    <nav id="navbar">
-        <header>
-            <h1>Bash Guide</h1>
-        </header>
-        <ul>
-            <li><a href="#What_is_Bash" class="nav-link">What is Bash</a></li>
-            <li><a href="#Using_on_the_command_line" class="nav-link">Using on the command line</a></li>
-            <li><a href="#Writing_a_bash_script" class="nav-link">Writing a bash script</a></li>
-            <li><a href="#Running_commands_as_'root'" class="nav-link">Running commands as 'root'</a></li>
-            <li><a href="#cat" class="nav-link">cat</a></li>
-            <li><a href="#cd" class="nav-link">cd</a></li>
-            <li><a href="#head" class="nav-link">head</a></li>
-            <li><a href="#ls" class="nav-link">ls</a></li>
-            <li><a href="#man" class="nav-link">man</a></li>
-            <li><a href="#mv" class="nav-link">mv</a></li>
-            <li><a href="#More_Information" class="nav-link">More Information</a></li>
-            <li><a href="#Reference_List" class="nav-link">Reference List</a></li>
-        </ul>
-    </nav>
-    <main id="main-doc">
-        <section class="main-section" id="What_is_Bash">
+    <body>
+        <nav id="navbar">
             <header>
-                <h2>What is Bash</h2>
+                <h1>Bash Guide</h1>
             </header>
-            <p>Bash (short for Bourne Again SHell) is a Unix shell, and a command language interpreter. A shell is
-                simply a macro processor that executes commands. It's the most widely used shell packaged by default for
-                most Linux distributions, and a successor for the Korn shell (ksh) and the C shell (csh).</p>
-            <p>Many things that can be done Linux operating system can be done via command line. Some examples are…</p>
             <ul>
-                <li>Editing Files</li>
-                <li>Adjusting the volume of the operating system</li>
-                <li>Fetching web pages from the internet</li>
-                <li>Automating work you do everyday</li>
+                <li><a href="#What_is_Bash" class="nav-link">What is Bash</a></li>
+                <li><a href="#Using_on_the_command_line" class="nav-link">Using on the command line</a></li>
+                <li><a href="#Writing_a_bash_script" class="nav-link">Writing a bash script</a></li>
+                <li><a href="#Running_commands_as_'root'" class="nav-link">Running commands as 'root'</a></li>
+                <li><a href="#cat" class="nav-link">cat</a></li>
+                <li><a href="#cd" class="nav-link">cd</a></li>
+                <li><a href="#head" class="nav-link">head</a></li>
+                <li><a href="#ls" class="nav-link">ls</a></li>
+                <li><a href="#man" class="nav-link">man</a></li>
+                <li><a href="#mv" class="nav-link">mv</a></li>
+                <li><a href="#More_Information" class="nav-link">More Information</a></li>
+                <li><a href="#Reference_List" class="nav-link">Reference List</a></li>
             </ul>
-            <p>You can read more about Bash
-                <a href="https://www.gnu.org/software/bash/">here</a>, via the
-                <a href="https://www.gnu.org/software/bash/manual/html_node/index.html">GNU Documentation</a>, and via
-                the
-                <a href="http://tldp.org/HOWTO/Bash-Prog-Intro-HOWTO.html">tldp guide</a>.
-            </p>
-        </section>
-        <section class="main-section" id="Using_on_the_command_line">
-            <header>
-                <h2>Using on the command line</h2>
-            </header>
-            <p>You can start using bash on most Linux and OS X operating systems by opening up a terminal. Let's
-                consider a simple hello world example. Open up your terminal, and write the following line (everything
-                after the $ sign):</p>
-            <code>zach@marigold:~$ echo "Hello world!"</code>
-            <p>As you can see, we used the echo command to print the string “Hello world!” to the terminal.</p>
-        </section>
-        <section class="main-section" id="Writing_a_bash_script">
-            <header>
-                <h2>Writing a bash script</h2>
-            </header>
-            <p>You can also put all of your bash commands into a .sh file, and run them from the command line. Say you
-                had a bash script with the following contents:</p>
-            <pre><code>#!/bin/bash
+        </nav>
+        <main id="main-doc">
+            <section class="main-section" id="What_is_Bash">
+                <header>
+                    <h2>What is Bash</h2>
+                </header>
+                <p>Bash (short for Bourne Again SHell) is a Unix shell, and a command language interpreter. A shell is
+                    simply a macro processor that executes commands. It's the most widely used shell packaged by default
+                    for
+                    most Linux distributions, and a successor for the Korn shell (ksh) and the C shell (csh).</p>
+                <p>Many things that can be done Linux operating system can be done via command line. Some examples are…
+                </p>
+                <ul>
+                    <li>Editing Files</li>
+                    <li>Adjusting the volume of the operating system</li>
+                    <li>Fetching web pages from the internet</li>
+                    <li>Automating work you do everyday</li>
+                </ul>
+                <p>You can read more about Bash
+                    <a href="https://www.gnu.org/software/bash/">here</a>, via the
+                    <a href="https://www.gnu.org/software/bash/manual/html_node/index.html">GNU Documentation</a>, and
+                    via
+                    the
+                    <a href="http://tldp.org/HOWTO/Bash-Prog-Intro-HOWTO.html">tldp guide</a>.
+                </p>
+            </section>
+            <section class="main-section" id="Using_on_the_command_line">
+                <header>
+                    <h2>Using on the command line</h2>
+                </header>
+                <p>You can start using bash on most Linux and OS X operating systems by opening up a terminal. Let's
+                    consider a simple hello world example. Open up your terminal, and write the following line
+                    (everything
+                    after the $ sign):</p>
+                <code>zach@marigold:~$ echo "Hello world!"</code>
+                <p>As you can see, we used the echo command to print the string “Hello world!” to the terminal.</p>
+            </section>
+            <section class="main-section" id="Writing_a_bash_script">
+                <header>
+                    <h2>Writing a bash script</h2>
+                </header>
+                <p>You can also put all of your bash commands into a .sh file, and run them from the command line. Say
+                    you
+                    had a bash script with the following contents:</p>
+                <pre><code>#!/bin/bash
 echo "Hello world!"</code></pre>
-            <p>It's worth noting that first line of the script starts with #!. It is a special directive which Unix
-                treats differently.</p>
-            <h3>Why did we use #!/bin/bash at the beginning of the script file?</h3>
-            <p>That is because it is a convention to let the interactive shell know what kind of interpreter to run for
-                the program that follows. The first line tells Unix that the file is to be executed by /bin/bash. This
-                is the standard location of the Bourne shell on just about every Unix system. Adding #!/bin/bash as the
-                first line of your script, tells the OS to invoke the specified shell to execute the commands that
-                follow in the script. <code>#!</code>is often referred to as a “hash-bang”, “she-bang” or “sha-bang”.
-            </p>
-            <p>Though it is only executed if you run your script as an executable. For example, when you type
-                <code>./scriptname.extension</code>, it will look at the top line to find out the interpreter, whereas,
-                running the script as <code>bash scriptname.sh</code>, first line is ignored.</p>
-            <p>Then you could run the script like so:</p>
-            <pre><code>zach@marigold:~$ ./myBashScript.sh
+                <p>It's worth noting that first line of the script starts with #!. It is a special directive which Unix
+                    treats differently.</p>
+                <h3>Why did we use #!/bin/bash at the beginning of the script file?</h3>
+                <p>That is because it is a convention to let the interactive shell know what kind of interpreter to run
+                    for
+                    the program that follows. The first line tells Unix that the file is to be executed by /bin/bash.
+                    This
+                    is the standard location of the Bourne shell on just about every Unix system. Adding #!/bin/bash as
+                    the
+                    first line of your script, tells the OS to invoke the specified shell to execute the commands that
+                    follow in the script. <code>#!</code>is often referred to as a “hash-bang”, “she-bang” or
+                    “sha-bang”.
+                </p>
+                <p>Though it is only executed if you run your script as an executable. For example, when you type
+                    <code>./scriptname.extension</code>, it will look at the top line to find out the interpreter,
+                    whereas,
+                    running the script as <code>bash scriptname.sh</code>, first line is ignored.
+                </p>
+                <p>Then you could run the script like so:</p>
+                <pre><code>zach@marigold:~$ ./myBashScript.sh
 Hello world!</code></pre>
-            <p>The script only has two lines. The first indicates what interpreter to use to run the file (in this case,
-                bash). The second line is the command we want to use, echo, followed by what we want to print which is
-                “Hello World”.</p>
-            <p>Sometimes the script won't be executed, and the above command will return an error. It is due to the
-                permissions set on the file. To avoid that use:</p>
-            <pre><code>zach@marigold:~$ chmod u+x myBashScript.sh</code></pre>
-            <p>or</p>
-            <pre><code>zach@marigold:~$ chmod 744 myBashScript.sh</code></pre>
-            <p>And then execute the script.</p>
-        </section>
-        <section class="main-section" id="Running_commands_as_'root'">
-            <header>
-                <h2>Running commands as 'root'</h2>
-            </header>
-            <p>Sometimes, running certain commands in bash will return in an error letting you know you don't have the
-                proper permissions to execute it. This means the command requires elevated permissions to run. This can
-                be achieved, through the "sudo" command. Users can be granted special "sudoer" permissions through a
-                file located at <code>/etc/sudoers</code>. To run sudo, you simply need to prepend it to the front of
-                the command you're running. It will then ask you for your password to validate that you're authorized to
-                run this command as well as to verify that you are intending to run it as "root". Running a command as
-                root means you are running it with the highest permissions available on the system with no restrictions.
-            </p>
-            <p>An example of a sudo command might look something like this:</p>
-            <pre><code>$sudo apt update
+                <p>The script only has two lines. The first indicates what interpreter to use to run the file (in this
+                    case,
+                    bash). The second line is the command we want to use, echo, followed by what we want to print which
+                    is
+                    “Hello World”.</p>
+                <p>Sometimes the script won't be executed, and the above command will return an error. It is due to the
+                    permissions set on the file. To avoid that use:</p>
+                <pre><code>zach@marigold:~$ chmod u+x myBashScript.sh</code></pre>
+                <p>or</p>
+                <pre><code>zach@marigold:~$ chmod 744 myBashScript.sh</code></pre>
+                <p>And then execute the script.</p>
+            </section>
+            <section class="main-section" id="Running_commands_as_'root'">
+                <header>
+                    <h2>Running commands as 'root'</h2>
+                </header>
+                <p>Sometimes, running certain commands in bash will return in an error letting you know you don't have
+                    the
+                    proper permissions to execute it. This means the command requires elevated permissions to run. This
+                    can
+                    be achieved, through the "sudo" command. Users can be granted special "sudoer" permissions through a
+                    file located at <code>/etc/sudoers</code>. To run sudo, you simply need to prepend it to the front
+                    of
+                    the command you're running. It will then ask you for your password to validate that you're
+                    authorized to
+                    run this command as well as to verify that you are intending to run it as "root". Running a command
+                    as
+                    root means you are running it with the highest permissions available on the system with no
+                    restrictions.
+                </p>
+                <p>An example of a sudo command might look something like this:</p>
+                <pre><code>$sudo apt update
             [sudo] password for user:
             Get:1 http://deb.parrotsec.org/parrot parrot InRelease</code>
             </pre>
-            <h3>Script Example</h3>
-            <p>If you execute this script it is going to print out your name.</p>
-            <pre><code>#!/usr/bin/env bash
+                <h3>Script Example</h3>
+                <p>If you execute this script it is going to print out your name.</p>
+                <pre><code>#!/usr/bin/env bash
 NAME="John"  
 echo  "Hello $NAME!"</code>
             </pre>
-        </section>
-        <section class="main-section" id="cat">
-            <header>
-                <h2>cat</h2>
-            </header>
-            <p>Cat is one of the most frequently used commands in Unix-like operating systems.</p>
-            <p>Cat is used to read a file sequentially and print it to the standard output. The name is derived from its
-                function to con<strong>cat</strong>enate files.</p>
-            <h3>Usage</h3>
-            <pre><code>cat [options] [file_names]</code></pre>
-            <p>Most used options:</p>
-            <ul>
-                <li><code>-b</code>, numer non-blank output lines</li>
-                <li><code>-n</code>, number all output lines</li>
-                <li><code>-s</code>, squeeze multiple adjacent blank lines</li>
-                <li><code>-v</code>, display nonprinting characters, except for tabs and the end of line character</li>
-            </ul>
-            <h3>Example</h3>
-            <p>Print in terminal the content of file.txt:</p>
-            <pre><code>cat file.txt</code></pre>
-            <p>Concatenate the content of the two files and display the result in terminal:</p>
-            <pre><code>cat file1.txt file2.txt</code></pre>
-        </section>
-        <section class="main-section" id="cd">
-            <header>
-                <h2>cd</h2>
-            </header>
-            <p><strong>Change Directory</strong> to the path specified, for example <code>cd projects</code>.</p>
-            <p>There are a few really helpful arguments to aid this:</p>
-            <ul>
-                <li><code>.</code> refers to the current directory, such as <code>./projects</code></li>
-                <li><code>..</code> can be used to move up one folder, use <code>cd ..</code>, and can be combined to
-                    move up multiple levels <code>../../my_folder</code></li>
-                <li><code>/</code> is the root of your system to reach core folders, such as <code>system</code>,
-                    <code>users</code>, etc.</li>
-                <li><code>~</code> is the home directory, usually the path <code>/users/username</code>. Move back to
-                    folders referenced relative to this path by including it at the start of your path, for example
-                    <code>~/projects</code>.</li>
-            </ul>
-        </section>
-        <section class="main-section" id="head">
-            <header>
-                <h2>head</h2>
-            </header>
-            <p>The head command allows you to view the first N lines of a file. if more than on file is called then the
-                first ten lines of each file is displayed, unless specific number of lines are specified. Choosing to
-                display the file header is optional using the option below.</p>
-            <h3>Usage</h3>
-            <pre><code>head [options] [file_name(s)]</code></pre>
-            <p>Most used options:</p>
-            <ul>
-                <li><code>-n N</code>, prints out he first N lines of the file(s)</li>
-                <li><code>-q</code>, doesn't print out the file headers</li>
-                <li><code>-v</code>, always prints out the file headers</li>
-            </ul>
-            <h3>Example</h3>
-            <pre><code>head file.txt</code></pre>
-            <p>Prints the first ten lines of file.txt(default)</p>
-            <pre><code>head -n 7 file.txt</code></pre>
-            <p>Prints the first seven lines of file.txt</p>
-            <pre><code>head -q -n 5 file1.txt file2.txt</code></pre>
-            <p>Prints the first 5 lines of file1.txt, followed by the first 5 lines of file2.txt</p>
-        </section>
-        <section class="main-section" id="ls">
-            <header>
-                <h2>ls</h2>
-            </header>
-            <p>ls is a command on Unix-like operating systems to list contents of a directory, for example folder and
-                file names. For each file named other than a directory, ls displays its name as well as any other
-                information.</p>
-            <h3>Usage</h3>
-            <pre><code>ls [options] [file_names]</code></pre>
-            <p>You can list the items in any directory without even entering the directory. Consider you are in a
-                directory with folders- Test1,Test2. You're in the parent directory you can list all files in Test1 as
-                follows- <code>ls Test1</code></p>
-            <p>Most used options:</p>
-            <ul>
-                <li><code>-a</code>, all files and folders, including ones that are hidden and start with a
-                    <code>.</code></li>
-                <li><code>-d</code>, list directories themselves and not contents of directories</li>
-                <li><code>-l</code>, list in long format</li>
-                <li><code>-lh</code>, shows sizes in human readable format</li>
-                <li><code>-lS</code>, displays file size in order; will display big in size first</li>
-                <li><code>-G</code>, enable colorized output</li>
-                <li><code>-s</code>, list file size</li>
-                <li><code>-t</code>, sorts the output by modification time</li>
-                <li><code>-r</code>, reverses the order while sorting</li>
-                <li><code>-R</code>, displays the contents of the directory and its subdirectories</li>
-            </ul>
-            <h3>Example</h3>
-            <p>List files with details in <code>home/user/docs</code></p>
-            <pre><code>ls -la
+            </section>
+            <section class="main-section" id="cat">
+                <header>
+                    <h2>cat</h2>
+                </header>
+                <p>Cat is one of the most frequently used commands in Unix-like operating systems.</p>
+                <p>Cat is used to read a file sequentially and print it to the standard output. The name is derived from
+                    its
+                    function to con<strong>cat</strong>enate files.</p>
+                <h3>Usage</h3>
+                <pre><code>cat [options] [file_names]</code></pre>
+                <p>Most used options:</p>
+                <ul>
+                    <li><code>-b</code>, number non-blank output lines</li>
+                    <li><code>-n</code>, number all output lines</li>
+                    <li><code>-s</code>, squeeze multiple adjacent blank lines</li>
+                    <li><code>-v</code>, display nonprinting characters, except for tabs and the end of line character
+                    </li>
+                </ul>
+                <h3>Example</h3>
+                <p>Print in terminal the content of file.txt:</p>
+                <pre><code>cat file.txt</code></pre>
+                <p>Concatenate the content of the two files and display the result in terminal:</p>
+                <pre><code>cat file1.txt file2.txt</code></pre>
+            </section>
+            <section class="main-section" id="cd">
+                <header>
+                    <h2>cd</h2>
+                </header>
+                <p><strong>Change Directory</strong> to the path specified, for example <code>cd projects</code>.</p>
+                <p>There are a few really helpful arguments to aid this:</p>
+                <ul>
+                    <li><code>.</code> refers to the current directory, such as <code>./projects</code></li>
+                    <li><code>..</code> can be used to move up one folder, use <code>cd ..</code>, and can be combined
+                        to
+                        move up multiple levels <code>../../my_folder</code></li>
+                    <li><code>/</code> is the root of your system to reach core folders, such as <code>system</code>,
+                        <code>users</code>, etc.
+                    </li>
+                    <li><code>~</code> is the home directory, usually the path <code>/users/username</code>. Move back
+                        to
+                        folders referenced relative to this path by including it at the start of your path, for example
+                        <code>~/projects</code>.
+                    </li>
+                </ul>
+            </section>
+            <section class="main-section" id="head">
+                <header>
+                    <h2>head</h2>
+                </header>
+                <p>The head command allows you to view the first N lines of a file. if more than on file is called then
+                    the
+                    first ten lines of each file is displayed, unless specific number of lines are specified. Choosing
+                    to
+                    display the file header is optional using the option below.</p>
+                <h3>Usage</h3>
+                <pre><code>head [options] [file_name(s)]</code></pre>
+                <p>Most used options:</p>
+                <ul>
+                    <li><code>-n N</code>, prints out he first N lines of the file(s)</li>
+                    <li><code>-q</code>, doesn't print out the file headers</li>
+                    <li><code>-v</code>, always prints out the file headers</li>
+                </ul>
+                <h3>Example</h3>
+                <pre><code>head file.txt</code></pre>
+                <p>Prints the first ten lines of file.txt(default)</p>
+                <pre><code>head -n 7 file.txt</code></pre>
+                <p>Prints the first seven lines of file.txt</p>
+                <pre><code>head -q -n 5 file1.txt file2.txt</code></pre>
+                <p>Prints the first 5 lines of file1.txt, followed by the first 5 lines of file2.txt</p>
+            </section>
+            <section class="main-section" id="ls">
+                <header>
+                    <h2>ls</h2>
+                </header>
+                <p>ls is a command on Unix-like operating systems to list contents of a directory, for example folder
+                    and
+                    file names. For each file named other than a directory, ls displays its name as well as any other
+                    information.</p>
+                <h3>Usage</h3>
+                <pre><code>ls [options] [file_names]</code></pre>
+                <p>You can list the items in any directory without even entering the directory. Consider you are in a
+                    directory with folders- Test1,Test2. You're in the parent directory you can list all files in Test1
+                    as
+                    follows- <code>ls Test1</code></p>
+                <p>Most used options:</p>
+                <ul>
+                    <li><code>-a</code>, all files and folders, including ones that are hidden and start with a
+                        <code>.</code>
+                    </li>
+                    <li><code>-d</code>, list directories themselves and not contents of directories</li>
+                    <li><code>-l</code>, list in long format</li>
+                    <li><code>-lh</code>, shows sizes in human readable format</li>
+                    <li><code>-lS</code>, displays file size in order; will display big in size first</li>
+                    <li><code>-G</code>, enable colorized output</li>
+                    <li><code>-s</code>, list file size</li>
+                    <li><code>-t</code>, sorts the output by modification time</li>
+                    <li><code>-r</code>, reverses the order while sorting</li>
+                    <li><code>-R</code>, displays the contents of the directory and its subdirectories</li>
+                </ul>
+                <h3>Example</h3>
+                <p>List files with details in <code>home/user/docs</code></p>
+                <pre><code>ls -la
 total 4
 -rwxrwx---    1 root root      5514 Feb  4  2018 log1.txt
 -rwxrwx---    1 root root      1024 Feb  5  2018 colors.txt
 -rwxrwx---    1 root root       112 Feb  8  2018 output.txt
 -rwxrwx---    1 root root       514 Feb  9  2018 notes.txt</code></pre>
-        </section>
-        <section class="main-section" id="man">
-            <header>
-                <h2>man</h2>
-            </header>
-            <p>Man, the abbreviation of <strong>man</strong>ual, is a bash command used to display on-line reference
-                manuals of the given command.</p>
-            <h3>Usage</h3>
-            <pre><code>man [options] [command]</code></pre>
-            <p>Most used options:</p>
-            <ul>
-                <li><code>-f</code>, print a short description of the given command</li>
-                <li><code>-a</code>, display, in succession, all of the available intro manual pages contained within
-                    the manual</li>
-                <li><code>-c</code>, reformat the source man page, used mostly when the page was formatted for a screen
-                    with a different number of columns</li>
-                <li><code>-l</code>, enabling case sensitivity</li>
-            </ul>
-            <h3>Examples</h3>
-            <p>Display the man page of ls</p>
-            <pre><code>man ls</code></pre>
-            <p>Display a short description of the shutdown command</p>
-            <pre><code>man -f shutdown</code></pre>
-            <p>Display the man page of ASCII table:</p>
-            <pre><code>man ascii</code></pre>
-        </section>
-        <section class="main-section" id="mv">
-            <header>
-                <h2>mv</h2>
-            </header>
-            <p>The mv command is used to move files and folders.</p>
-            <h3>Usage</h3>
-            <pre><code>mv source_directory target_directory</code></pre>
-            <p>The first argument is the file you want to move, and the second is the location to move it to. It can
-                also be used to rename a file, by inputting 2 file names as parameters, like so:
-                <code>mv originalFilename.txt newFilename.txt</code></p>
-            <p>Commonly used options:</p>
-            <ul>
-                <li><code>-b</code> to create a backup file with the name of the destination file</li>
-                <li><code>-f</code> to force move them and overwrite files without checking with the user</li>
-                <li><code>-i</code> to prompt confirmation before overwriting files</li>
-                <li><code>-n</code> do not overwrite an existing file</li>
-                <li><code>-T</code> to rename a file named source to destination</li>
-            </ul>
-            <h3>Warning</h3>
-            <p>This command is capable of modifying many files at once with ease. This can be beneficial, but also
-                dangerous. Use at your own risk.</p>
-        </section>
-        <section class="main-section" id="More_Information">
-            <header>
-                <h2>More Information</h2>
-            </header>
-            <ul>
-                <li><a href="https://en.wikipedia.org/wiki/Bash_(Unix_shell)">Wikipedia - Bash</a></li>
-                <li><a href="https://tldp.org/HOWTO/Bash-Prog-Intro-HOWTO.html">tldp.org - Guide to Bash</a></li>
-                <li><a href="https://www.gnu.org/software/bash/">gnu.org - Bash manual</a></li>
-                <li><a href="https://ss64.com/bash/">SS64 - Linux command line: bash + utilities</a></li>
-                <li><a href="https://www.shellscript.sh/">Shell scripting tutorial</a></li>
-            </ul>
-        </section>
-        <section class="main-section" id="Reference_List">
-            <header>
-                <h2>Reference List</h2>
-            </header>
-            <ul>
-                <li><a
-                        href="https://github.com/freeCodeCamp/guide/tree/archive-articles-2019/english/bash">https://github.com/freeCodeCamp/guide/tree/archive-articles-2019/english/bash</a>
-                </li>
-                <li><a href="https://www.freecodecamp.org/news/linux-command-line-bash-tutorial/">
-                        https://www.freecodecamp.org/news/linux-command-line-bash-tutorial/</a></li>
-            </ul>
-        </section>
-    </main>
-</body>
+            </section>
+            <section class="main-section" id="man">
+                <header>
+                    <h2>man</h2>
+                </header>
+                <p>Man, the abbreviation of <strong>man</strong>ual, is a bash command used to display on-line reference
+                    manuals of the given command.</p>
+                <h3>Usage</h3>
+                <pre><code>man [options] [command]</code></pre>
+                <p>Most used options:</p>
+                <ul>
+                    <li><code>-f</code>, print a short description of the given command</li>
+                    <li><code>-a</code>, display, in succession, all of the available intro manual pages contained
+                        within
+                        the manual</li>
+                    <li><code>-c</code>, reformat the source man page, used mostly when the page was formatted for a
+                        screen
+                        with a different number of columns</li>
+                    <li><code>-l</code>, enabling case sensitivity</li>
+                </ul>
+                <h3>Examples</h3>
+                <p>Display the man page of ls</p>
+                <pre><code>man ls</code></pre>
+                <p>Display a short description of the shutdown command</p>
+                <pre><code>man -f shutdown</code></pre>
+                <p>Display the man page of ASCII table:</p>
+                <pre><code>man ascii</code></pre>
+            </section>
+            <section class="main-section" id="mv">
+                <header>
+                    <h2>mv</h2>
+                </header>
+                <p>The mv command is used to move files and folders.</p>
+                <h3>Usage</h3>
+                <pre><code>mv source_directory target_directory</code></pre>
+                <p>The first argument is the file you want to move, and the second is the location to move it to. It can
+                    also be used to rename a file, by inputting 2 file names as parameters, like so:
+                    <code>mv originalFilename.txt newFilename.txt</code>
+                </p>
+                <p>Commonly used options:</p>
+                <ul>
+                    <li><code>-b</code> to create a backup file with the name of the destination file</li>
+                    <li><code>-f</code> to force move them and overwrite files without checking with the user</li>
+                    <li><code>-i</code> to prompt confirmation before overwriting files</li>
+                    <li><code>-n</code> do not overwrite an existing file</li>
+                    <li><code>-T</code> to rename a file named source to destination</li>
+                </ul>
+                <h3>Warning</h3>
+                <p>This command is capable of modifying many files at once with ease. This can be beneficial, but also
+                    dangerous. Use at your own risk.</p>
+            </section>
+            <section class="main-section" id="More_Information">
+                <header>
+                    <h2>More Information</h2>
+                </header>
+                <ul>
+                    <li><a href="https://en.wikipedia.org/wiki/Bash_(Unix_shell)">Wikipedia - Bash</a></li>
+                    <li><a href="https://tldp.org/HOWTO/Bash-Prog-Intro-HOWTO.html">tldp.org - Guide to Bash</a></li>
+                    <li><a href="https://www.gnu.org/software/bash/">gnu.org - Bash manual</a></li>
+                    <li><a href="https://ss64.com/bash/">SS64 - Linux command line: bash + utilities</a></li>
+                    <li><a href="https://www.shellscript.sh/">Shell scripting tutorial</a></li>
+                </ul>
+            </section>
+            <section class="main-section" id="Reference_List">
+                <header>
+                    <h2>Reference List</h2>
+                </header>
+                <ul>
+                    <li><a
+                            href="https://github.com/freeCodeCamp/guide/tree/archive-articles-2019/english/bash">https://github.com/freeCodeCamp/guide/tree/archive-articles-2019/english/bash</a>
+                    </li>
+                    <li><a href="https://www.freecodecamp.org/news/linux-command-line-bash-tutorial/">
+                            https://www.freecodecamp.org/news/linux-command-line-bash-tutorial/</a></li>
+                </ul>
+            </section>
+        </main>
+    </body>
 
 </html>
